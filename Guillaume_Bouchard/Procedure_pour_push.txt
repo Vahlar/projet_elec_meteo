@@ -1,0 +1,9 @@
+
+les commandes pour effectuer un push
+
+git init  https://github.com/Vahlar/projet_elec_meteo.git
+git pull https://github.com/Vahlar/projet_elec_meteo.git
+git remote add origin https://github.com/Vahlar/projet_elec_meteo.git
+git config --global user.email "guillaume.bouchard@etu.univ-cotedazur.fr"
+git config --global user.email "guillaume-bouchard"
+git gui // pour effectuer le push
