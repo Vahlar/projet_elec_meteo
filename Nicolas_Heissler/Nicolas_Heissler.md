@@ -8,8 +8,8 @@ Nicolas Heissler
 
 25/09/2020 :
 - 
--Etude du code de l'équipe précèdente
--Mise en forme de tout le code déjà présent et modification afin d'améliorer la lisibilité
--Installation de toutes les librairies nécessaire pour utiliser les différents capteurs
--Création d'un code afin de tester le capteur BME (température, pression, humidité)
--Test du capteur BME sur labdec
+-Etude du code de l'équipe précèdente  
+-Mise en forme de tout le code déjà présent et modification afin d'améliorer la lisibilité  
+-Installation de toutes les librairies nécessaire pour utiliser les différents capteurs  
+-Création d'un code afin de tester le capteur BME (température, pression, humidité)  
+-Test du capteur BME sur labdec  
