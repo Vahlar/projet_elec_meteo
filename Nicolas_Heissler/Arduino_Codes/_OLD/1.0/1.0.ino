@@ -1,3 +1,9 @@
+#include <config.h>
+#include <LoRaNode.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_TSL2591.h>
+#include <Adafruit_BME280.h>
+
 #include <Wire.h>
 #include <SPI.h>
 #include <LoRa.h>
