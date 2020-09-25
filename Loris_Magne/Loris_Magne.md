@@ -9,3 +9,6 @@ Séance du 10/09/2020 :
 
 Séance du 25/09/2020 :
 - 
+- Etude du fonctonnement des différents capteurs, notamment celui qui mesure l'hydrométrie.
+- Prise de connaissance du code existant permettant de gérer les trames LoRa
+- Modification
