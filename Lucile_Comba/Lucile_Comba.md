@@ -1,6 +1,6 @@
 Lucile COMBA--ANTONETTI 
 
-Rapport individuel suivi de projet :
+Rapport individuel de suivi de projet :
 ==
 séance du 10/09/20  
 - 
