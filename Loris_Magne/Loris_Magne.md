@@ -11,5 +11,5 @@ Séance du 25/09/2020 :
 - 
 - Etude du fonctonnement des différents capteurs, notamment celui qui mesure l'hydrométrie.  
 - Prise de connaissance du code existant permettant de gérer les trames LoRa  
-- Mise à jour du code existant et création d'une nouvelle version V1.1 (avec Nicolas H.)  
+- Mise à jour du code existant et création d'une nouvelle version V1.1, intégrant les bonnes librairies pour utiliser nos capteurs (avec Nicolas H.)  
 - Création d'un fichier test pour le capteur BME (température, pression et humidité) (avec Nicolas H.)  
