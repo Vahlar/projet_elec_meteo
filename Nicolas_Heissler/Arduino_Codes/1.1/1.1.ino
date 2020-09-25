@@ -31,19 +31,22 @@
 // connect GROUND to GND
 
 ///--- VARIABLES
-Adafruit_BME280 bme;  // I2C
-Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591);
+#define SEALEVELPRESSURE_HPA (1013.25)
 
-unsigned long actualTime;				 	// Actual time (in ms since the programme was launched
-unsigned long TimeOfTheLastSend = 0;	 	// Time where the last message was sent
+Adafruit_BME280 bme;  // I2C
+Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591); // pass in a number for the sensor identifier (for your use later)
+
+unsigned long actualTime;                   // Actual time (in ms since the programme was launched
+unsigned long TimeOfTheLastSend = 0;        // Time where the last message was sent
 int 	   	  TimeBetweenTwoSend = 900000;  // Time between two sending (900000 ms -> 15 minutes)
-unsigned long counter = 0;				 	// Number of message sent
-String		  messageReceived = "";			// Message that the balance module will send to us
-String		  messageToSend = "";			// Message to send to the gateway
+unsigned long counter = 0;                  // Number of message sent
+String		  messageReceived = "";         // Message that the balance module will send to us
+String		  messageToSend = "";           // Message to send to the gateway
 
 
 ///--- FUNCTIONS
 void launchBmeProcess();
+void launchTslProcess();
 
 // Initiate mod with pins management and communication speed
 void setup() 
@@ -75,7 +78,8 @@ void setup()
   while (!tsl.begin())
   {
 	Serial.println(F("No sensor found ... check your wiring?"));
-  }  
+  }
+  // Configures the gain and integration time for the TSL2591   
   tsl.setGain(TSL2591_GAIN_MED);  //Medium gain (LOW for bright light and HIGH for dim light)
   tsl.setTiming(TSL2591_INTEGRATIONTIME_300MS); //Medium intergration time  (100MS for bright light to 600MS for dim light)
   Serial.println(F("TSL2591 sensor founded and set"));
@@ -87,20 +91,15 @@ void loop()
   if (actualTime - TimeOfTheLastSend > TimeBetweenTwoSend)
   {
     TimeOfTheLastSend = actualTime;
-	
-	//-- LAUNCHING BME SENSOR PROCESS
-	launchBmeProcess();
 
-	//-- GET ACTUAL LUMINOSITY
-    uint32_t lum = tsl.getFullLuminosity();
-    uint16_t ir, full;
-    ir = lum >> 16;
-    full = lum & 0xFFFF;
+  Serial.print("\n");
+  
+  ///--- LAUNCHING BME SENSOR PROCESS
+  launchBmeProcess();
 
-    Serial.print("\n");
-
-	//-- DISPLAY LUMINOSITY
-    Serial.print(F("Lux: ")); Serial.println(tsl.calculateLux(full, ir));
+  ///--- LAUNCHING TSL SENSOR PROCESS
+  launchTslProcess();
+  
 /*
     //-- CHECK IF LORA IS CONNECTED (The receiver)
     if (Serial.available())
@@ -128,17 +127,37 @@ void loop()
 
 void launchBmeProcess()
 {
-	bme.takeForcedMeasurement();
-	
-	//-- DISPLAY PRESSURE
-    Serial.print("Pression en millibars : ");
-    Serial.println(bme.readPressure());
+  bme.takeForcedMeasurement();
+  
+  //-- DISPLAY PRESSURE
+  Serial.print("Pressure : ");
+  Serial.print(bme.readPressure());
+  Serial.println(" hPa");
 
-	//-- DISPLAY HUMIDITY
-    Serial.print("Humidité en % : ");
-    Serial.println(bme.readHumidity());
+  //-- DISPLAY HUMIDITY
+  Serial.print("Humidity : ");
+  Serial.println(bme.readHumidity());
+  Serial.println(" %");
+    
+  //-- DISPLAY TEMPERATURE
+  Serial.print("Temperature : ");
+  Serial.println(bme.readTemperature());
+  Serial.println(" °C");
 
-	//-- DISPLAY TEMPERATURE
-    Serial.print("Temperature en degre celsius : ");
-    Serial.println(bme.readTemperature());
+  //-- DISPLAY ALTITUDE
+  Serial.print("Altitude = ");
+  Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
+  Serial.println(" m");
+}
+
+void launchTslProcess()
+{
+  uint32_t lum = tsl.getFullLuminosity();
+  uint16_t ir, full;
+  ir = lum >> 16;
+  full = lum & 0xFFFF;
+  Serial.print(F("IR: ")); Serial.print(ir);  Serial.print(F("  "));
+  Serial.print(F("Full: ")); Serial.print(full); Serial.print(F("  "));
+  Serial.print(F("Visible: ")); Serial.print(full - ir); Serial.print(F("  "));
+  Serial.print(F("Lux: ")); Serial.println(tsl.calculateLux(full, ir), 6);
 }

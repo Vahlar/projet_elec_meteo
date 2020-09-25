@@ -13,6 +13,9 @@
 // connect Vcc to 3.3V
 // connect GROUND to GND
 
+///--- VARIABLES
+#define SEALEVELPRESSURE_HPA (1013.25)
+
 ///--- FUNCTIONS
 void launchBmeProcess();
 
@@ -50,14 +53,22 @@ void launchBmeProcess()
   bme.takeForcedMeasurement();
   
   //-- DISPLAY PRESSURE
-    Serial.print("Pression en millibars : ");
-    Serial.println(bme.readPressure());
+  Serial.print("Pressure : ");
+  Serial.print(bme.readPressure());
+  Serial.println(" hPa");
 
   //-- DISPLAY HUMIDITY
-    Serial.print("Humidité en % : ");
-    Serial.println(bme.readHumidity());
-
+  Serial.print("Humidity : ");
+  Serial.println(bme.readHumidity());
+  Serial.println(" %");
+    
   //-- DISPLAY TEMPERATURE
-    Serial.print("Temperature en degre celsius : ");
-    Serial.println(bme.readTemperature());
+  Serial.print("Temperature : ");
+  Serial.println(bme.readTemperature());
+  Serial.println(" °C");
+
+  //-- DISPLAY ALTITUDE
+  Serial.print("Altitude = ");
+  Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
+  Serial.println(" m");
 }
