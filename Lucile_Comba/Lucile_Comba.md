@@ -1,6 +1,6 @@
 Lucile COMBA--ANTONETTI  
 
-* 10/09/20  
+==10/09/20  
 - 
 - installation et prise en main de github et git (tests pull/push)  
 - prise de connaissance du travail à faire  
