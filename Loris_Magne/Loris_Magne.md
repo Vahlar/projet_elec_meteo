@@ -5,3 +5,6 @@ Séance du 10/09/2020 :
 - Prise en main de Github et création des différents fichiers et de l'espace de travail  
 - Prise en main des commandes pull / push dans le Git Bash  
 - Prise en main de la synthaxe Markdown
+
+Séance du 25/09/2020 :
+- 
