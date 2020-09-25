@@ -5,8 +5,8 @@ Séance du 10/09
 	- Analyse des données présentent dans le rapport des années précédentes  
 	
 Séance du 25/09
-	- Récupération du matériel 
-	- Branchement du BME 280 
-	- Branchement du FTDI 232 
-	- Câblage du montage pour téléverser sur l'ESP 32 
+	- Récupération du matériel  
+	- Branchement du BME 280  
+	- Branchement du FTDI 232  
+	- Câblage du montage pour téléverser sur l'ESP 32  
 	
