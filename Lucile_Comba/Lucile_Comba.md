@@ -10,7 +10,7 @@ Rapport individuel suivi de projet :
 
 25/09/20  
 - 
-- rédaction du cahier des charges  
-- lecture de la Datashet des capteurs 
+- rédaction du cahier des charges : terminé 
+- lecture des Datasheets pour réaliser les cablage
 - mise en place du cablage du capteur BME 280, du microcontrolleur ESP32 et du driver FTDI 232 sur la plaque Labdec
 
