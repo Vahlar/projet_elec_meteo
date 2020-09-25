@@ -4,8 +4,9 @@ Séance du 10/09
 	- Lecture du document qui a été effectué les années précédentes  
 	- Analyse des données présentent dans le rapport des années précédentes  
 	
-Séance du 25/09
-	- Récupération du matériel  
+Séance du 25/09  
+	- Rédaction du cahier des charges  
+	- Lecture des datasheets    
 	- Branchement du BME 280  
 	- Branchement du FTDI 232  
 	- Câblage du montage pour téléverser sur l'ESP 32  
