@@ -13,3 +13,9 @@ Séance du 25/09/2020 :
 - Prise de connaissance du code existant  
 - Mise à jour du code existant et création d'une nouvelle version V1.1, intégrant les bonnes librairies pour utiliser nos capteurs (avec Nicolas H.)  
 - Création d'un fichier test pour le capteur BME (température, pression et humidité) (avec Nicolas H.)  
+
+Séance du 08/10/2020 :
+-
+- Réalisation des tests sur le capteur BME (température, pression et humidité) et le capteur TSL2591 (luminosité)  
+- Réalisation d'un GANTT afin d'organiser le projet de façon plus structurée  
+
