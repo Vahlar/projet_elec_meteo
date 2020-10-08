@@ -7,4 +7,9 @@ CR 10/09/2020:
 CR 25/09/2020
 
 - rédaction du cahier des charges du projet.
-- câblage du BME 280 et du FTDI 232 à l'ESP 32.
+- câblage du BME280 et du FTDI232 à l'ESP32.
+
+CR 08/10/2020
+
+- câblage du TSL2591
+- test du TSL2591 et du BME280
