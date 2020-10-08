@@ -17,8 +17,9 @@ séance du 25/09/20
 
 séance du 08/10/20  
 - 
-- test du capteur BME 280
-- mise en place du cablage du capteur TSL 2591
-- test du capteur TSL 2591
-- téléchargement de librairie ESP32
+- test du capteur BME 280  
+- mise en place du cablage du capteur TSL 2591  
+- test du capteur TSL 2591  
+- téléchargement de librairie ESP32  
+- lecture de la datasheet du pluviomètre  
 
