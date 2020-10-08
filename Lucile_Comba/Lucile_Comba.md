@@ -13,5 +13,12 @@ séance du 25/09/20
 - rédaction du cahier des charges : terminé
 - étude du fonctionnement du capteur de pluviométrie (avec Loris)
 - lecture des Datasheets pour réaliser les cablages
-- mise en place du cablage du capteur BME 280, du microcontrolleur ESP32 et du driver FTDI 232 sur la plaque Labdec
+- mise en place du cablage du capteur BME 280, du microcontrolleur ESP32 et du driver FTDI 232 sur la plaque Labdec  
+
+séance du 08/10/20  
+- 
+- test du capteur BME 280
+- mise en place du cablage du capteur TSL 2591
+- test du capteur TSL 2591
+- 
 
