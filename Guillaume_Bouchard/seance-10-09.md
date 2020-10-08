@@ -11,3 +11,9 @@ Séance du 25/09
 	- Branchement du FTDI 232  
 	- Câblage du montage pour téléverser sur l'ESP 32  
 	
+Séance du 08/10
+	- Modifiaction du câblage pour le montage de téléversement  
+	- Récupération du schéma sur Eagle  
+	- Test des capteurs BME 280 et TSL2591  
+	- Prise en main du logiciel Eagle sur la partie routage  
+	
