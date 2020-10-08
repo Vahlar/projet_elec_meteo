@@ -41,6 +41,8 @@ void loop()
   
   ///--- LAUNCHING TSL SENSOR PROCESS
   launchTslProcess();
+
+  delay(500);
 }
 
 void launchTslProcess()
