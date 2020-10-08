@@ -16,6 +16,8 @@ Séance du 25/09/2020 :
 
 Séance du 08/10/2020 :
 -
+- Câblage des capteurs BME et TSL (ok)  
 - Réalisation des tests sur le capteur BME (température, pression et humidité) et le capteur TSL2591 (luminosité)  
-- Réalisation d'un GANTT afin d'organiser le projet de façon plus structurée  
+- Recherche et installation des différentes librairies pour faire le code LoRa sur Arduino  
+- Commencement du code LoRa afin de tester l'envoi de trames avec le module Lora RFM96  
 
