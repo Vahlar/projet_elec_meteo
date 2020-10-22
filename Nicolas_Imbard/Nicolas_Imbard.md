@@ -13,3 +13,9 @@ CR 08/10/2020
 
 - câblage du TSL2591
 - test du TSL2591 et du BME280
+
+CR 22/10/2020
+
+- soudage des prises rj11 femelles
+- câble des modules Lora
+- mise en place des capteurs de pluviométrie et d'anémométrie pour les tests
