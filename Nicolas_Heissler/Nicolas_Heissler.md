@@ -21,3 +21,11 @@ Nicolas Heissler
 -Test du capteur TSL (seul)  
 -Test des deux capteurs en simultané (i2c maître-esclave)  
 -Installation de la librarie LoRa puis début d'un code de test pour envoyer des trames avec le module LoRa  
+
+22/10/2020 :
+-
+-Réalisation du code pour envoyer des trames avec un module LoRa  
+-Réalisation du code pour recevoir des trames avec un module LoRa  
+-Branchement d'un module LoRa sur la breadBoard (module "sender")  
+-Utilisation d'une autre carte programmable avec module LoRa intégré pour recevoir les trames envoyées par notre premier module  
+-Premiers tests et debuggage des échanges entre modules LoRa  
