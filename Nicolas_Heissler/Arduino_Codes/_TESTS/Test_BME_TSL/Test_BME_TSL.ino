@@ -83,7 +83,7 @@ void launchBmeProcess()
   Serial.print("Pressure : ");
   Serial.print(bme.readPressure());
   Serial.println(" Pa");
-  Serial.print("Pression au niveau 0 : ");
+  Serial.print("Pressure at level 0 : ");
   Serial.print(bme.readPressure()/0.987);
   Serial.println(" Pa");
 
@@ -98,7 +98,7 @@ void launchBmeProcess()
   Serial.println(" °C");
 
   //-- DISPLAY ALTITUDE
-  Serial.print("Altitude = ");
+  Serial.print("Height = ");
   Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
   Serial.println(" m");
 }
