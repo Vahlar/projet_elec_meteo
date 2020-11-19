@@ -30,3 +30,8 @@ Séance du 22/10/20
 - réalisation du code arduino du pluviometre 
 - mise en place du cablage du pluviomètre
 
+Séance du 19/11/20  
+- 
+- réanalyse du cablage (pouton poussoir défectueux et problème de pin)    
+- test du code du pluviometre 
+
