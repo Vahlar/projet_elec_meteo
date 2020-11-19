@@ -21,3 +21,7 @@ Séance du 08/10/2020 :
 - Recherche et installation des différentes librairies pour faire le code LoRa sur Arduino  
 - Commencement du code LoRa afin de tester l'envoi de trames avec le module Lora RFM96  
 
+Séance du 22/10/2020 (isolé car cas contact COVID) :
+-  
+- Recherche et documentation pour le câblage du module RF96.
+- Câblage du module LoRa et test des premiers codes (envoie de trames)
