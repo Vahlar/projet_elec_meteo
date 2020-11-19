@@ -33,5 +33,5 @@ Séance du 22/10/20
 Séance du 19/11/20  
 - 
 - réanalyse du cablage (pouton poussoir défectueux et problème de pin)    
-- test du code du pluviometre 
+- test du code du pluviomètre 
 
