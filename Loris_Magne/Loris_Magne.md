@@ -27,3 +27,8 @@ Séance du 22/10/2020 (isolé car cas contact COVID) :
 - Finalisation d'un code permettant l'envoie de trames LoRa.
 - Elaboration d'un code permettant la réception de trames LoRa.
 - Câblage du module LoRa et test des premiers codes (envoie de trames)
+
+Séance du 19/11/2020 :
+-  
+- Analyse et description du fonctionnement de la Gateway
+- câblage et test du pluviomètre
