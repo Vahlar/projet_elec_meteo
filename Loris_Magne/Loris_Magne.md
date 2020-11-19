@@ -31,5 +31,6 @@ Séance du 22/10/2020 (isolé car cas contact COVID) :
 Séance du 19/11/2020 :
 -  
 - Analyse et description du fonctionnement de la Gateway
-- câblage et test du pluviomètre.
+- câblage et test du pluviomètre
+- Analyse du câblage car problème de téléversement lorsqu'on branche MISO et MOSI
 - Test envoi trames LoRa
