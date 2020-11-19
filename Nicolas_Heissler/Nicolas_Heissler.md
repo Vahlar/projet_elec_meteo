@@ -28,4 +28,7 @@ Nicolas Heissler
 -Réalisation du code pour recevoir des trames avec un module LoRa  
 -Branchement d'un module LoRa sur la breadBoard (module "sender")  
 -Utilisation d'une autre carte programmable avec module LoRa intégré pour recevoir les trames envoyées par notre premier module  
--Premiers tests et debuggage des échanges entre modules LoRa  
+- Premiers tests et debuggage des échanges entre modules LoRa  
+
+19/11/2020 :
+-
