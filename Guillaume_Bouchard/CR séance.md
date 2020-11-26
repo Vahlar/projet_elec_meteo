@@ -29,3 +29,8 @@ Séance du 08/10 :
 -Modification du câblage du module LoRa (le branchement n'était pas bon nous utilisions les modules SPI interne)    
 -Test de téléversement pour le module LoRa (Fonctionnel)    
 	
+26/11/2020 :  
+-Vérification du bon fonctionnement de l'anémomètre    
+-Test de l'addaptateur (il ne fonctionne pas, il y a un problème de soudure)    
+-Le code de l'anémomètre fonctionne avec le bouton poussoir    
+-Nous avons repérer un problème de rebond (mise en place d'une capa de 220 PF en parrallèle du switch)    
