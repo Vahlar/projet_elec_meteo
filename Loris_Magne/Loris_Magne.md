@@ -39,6 +39,6 @@ Séance du 26/11/2020
 -  
 - Test du code de l'anémomètre avec un bouton poussoir simulant le nombre d'interruptions (tours)  
 - Câblage de l'anémomètre avec l'adaptateur RJ11  
-- Problème rencontré : adaptateur non fonctionnel  
+- Recherche du problème au niveau du nombre d'interruption --> adaptateur non fonctionnel  
 - Test en direct sur l'anémomètre avec une résistance de tirage --> interruption ok mais problème de rebond  
 - Pour palier le problème de rebond, mise en place d'une capacité en parrallèle avec le switch  
