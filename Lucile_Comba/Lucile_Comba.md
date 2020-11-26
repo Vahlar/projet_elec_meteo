@@ -33,5 +33,13 @@ Séance du 22/10/20
 Séance du 19/11/20  
 - 
 - réanalyse du cablage (pouton poussoir défectueux et problème de pin)    
-- test du code du pluviomètre 
+- test du code du pluviomètre (avec bouton poussoir)  
+
+Séance du 26/11/20  
+- 
+- test du code de l'anémomètre (avec bouton poussoir)
+- cablage de l'anémometre avec l'adaptateur RJ11
+- test avec ce cablage : il ne fonctionne pas, il faut le ressouder
+- test sans le RJ11 (en tenant les cables) : problèmes de rebonds
+
 
