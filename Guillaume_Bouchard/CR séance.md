@@ -16,4 +16,16 @@ Séance du 08/10
 	- Récupération du schéma sur Eagle  
 	- Test des capteurs BME 280 et TSL2591  
 	- Prise en main du logiciel Eagle sur la partie routage  
+
+22/10/2020 :
+-Branchement du pluviometre sur la breadBoard   
+-Branchement d'un module LoRa sur la breadBoard    
+-Analyse de la datasheet du microcontrôleur pour savoir quelles pin permettent de faire du SPI    
+-Problème avec le module de téléversement    
+
+19/11/2020 : 
+-Rectification du câblage, pour réactivé le téléversement    
+-Vérification que le pluviometre fonctionne / test de continuité    
+-Modification du câblage du module LoRa (le branchement n'était pas bon nous utilisions les modules SPI interne)    
+-Test de téléversement pour le module LoRa (Fonctionnel)    
 	
