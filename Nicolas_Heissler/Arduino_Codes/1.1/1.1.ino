@@ -38,10 +38,10 @@ Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591); // pass in a number for the senso
 
 unsigned long actualTime;                   // Actual time (in ms since the programme was launched
 unsigned long TimeOfTheLastSend = 0;        // Time where the last message was sent
-int 	   	  TimeBetweenTwoSend = 900000;  // Time between two sending (900000 ms -> 15 minutes)
+int 	   	  TimeBetweenTwoSend = 900000;    // Time between two sending (900000 ms -> 15 minutes)
 unsigned long counter = 0;                  // Number of message sent
-String		  messageReceived = "";         // Message that the balance module will send to us
-String		  messageToSend = "";           // Message to send to the gateway
+String		  messageReceived = "";           // Message that the balance module will send to us
+String		  messageToSend = "";             // Message to send to the gateway
 
 
 ///--- FUNCTIONS

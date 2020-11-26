@@ -6,9 +6,9 @@
 #define LoraSenderBand 868E6
 
 // Lora Sender
-#define sender_rst  8
-#define sender_dio0 9
-#define sender_ss   19
+#define sender_rst  32
+#define sender_dio0 33
+#define sender_ss   27
 
 ///--- VARIABLES
 int messageNumber = 0;

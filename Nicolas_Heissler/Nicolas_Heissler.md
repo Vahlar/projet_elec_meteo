@@ -32,3 +32,15 @@ Nicolas Heissler
 
 19/11/2020 :
 -
+-Réalisation du code pour tester le capteur de pluviometrie
+-Câblage du banc de test pour tester le capteur de température
+-Câblage du banc de test pour tester le module LoRa
+-Début de test du module LoRa et comparaison avec le code de la balance et de la gateway
+
+26/11/2020 :
+-
+-Vérification du bon fonctionnement du code de l'anémometre (test avec bouton poussoir)
+-Test de l'adapteur (RJ-11) -> ne fonctionne pas, il faut en ressouder un
+-Vérification du bon fonctionnement de l'anémomètre (sans le RJ11 -> en tenant les câbles ) 
+-> détection problème de rebond 
+-> mise en place d'une capa de 220pF en parallèle du switch
