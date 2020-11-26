@@ -31,6 +31,14 @@ Séance du 22/10/2020 (isolé car cas contact COVID) :
 Séance du 19/11/2020 :
 -  
 - Analyse et description du fonctionnement de la Gateway
-- câblage et test du pluviomètre
+- Câblage et test du pluviomètre
 - Analyse du câblage car problème de téléversement lorsqu'on branche MISO et MOSI
 - Test envoi trames LoRa
+
+Séance du 26/11/2020
+-  
+- Test du code de l'anémomètre avec un bouton poussoir simulant le nombre d'interruptions (tours)  
+- Câblage de l'anémomètre avec l'adaptateur RJ11  
+- Problème rencontré : adaptateur non fonctionnel  
+- Test en direct sur l'anémomètre avec une résistance de tirage --> interruption ok mais problème de rebond  
+- Pour palier le problème du rebond, mise en place d'une capacité en parrallèle avec le switch  
