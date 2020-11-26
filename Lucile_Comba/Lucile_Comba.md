@@ -28,18 +28,21 @@ Séance du 22/10/20
 - réalisation du code arduino du pluviomètre  
 - lecture de la datasheet de l'anémomètre   
 - réalisation du code arduino du pluviomètre 
-- mise en place du cablage du pluviomètre
+- mise en place du cablage du pluviomètre (avec bouton poussoir)  
 
 Séance du 19/11/20  
-- 
-- réanalyse du cablage (pouton poussoir défectueux et problème de pin)    
+-    
 - test du code du pluviomètre (avec bouton poussoir)  
+- problèmes de cablage : pouton poussoir défectueux et problème de pin 
+- les modifcations apportées ont résolu les problèmes
 
 Séance du 26/11/20  
 - 
+- mise en place du cablage de l'anémomètre (avec bouton poussoir)  
 - test du code de l'anémomètre (avec bouton poussoir)
 - cablage de l'anémometre avec l'adaptateur RJ11
 - test avec ce cablage : il ne fonctionne pas, il faut le ressouder
 - test sans le RJ11 (en tenant les cables) : problèmes de rebonds
+- mise en place d'un condensateur (220 pF) en parallèle de l'anémomètre
 
 
