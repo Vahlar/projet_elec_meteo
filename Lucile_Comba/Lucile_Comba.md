@@ -25,9 +25,9 @@ Séance du 08/10/20
 
 Séance du 22/10/20  
 - 
-- réalisation du code arduino du pluviometre  
+- réalisation du code arduino du pluviomètre  
 - lecture de la datasheet de l'anémomètre   
-- réalisation du code arduino du pluviometre 
+- réalisation du code arduino du pluviomètre 
 - mise en place du cablage du pluviomètre
 
 Séance du 19/11/20  
