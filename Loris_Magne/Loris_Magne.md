@@ -41,4 +41,4 @@ Séance du 26/11/2020
 - Câblage de l'anémomètre avec l'adaptateur RJ11  
 - Problème rencontré : adaptateur non fonctionnel  
 - Test en direct sur l'anémomètre avec une résistance de tirage --> interruption ok mais problème de rebond  
-- Pour palier le problème du rebond, mise en place d'une capacité en parrallèle avec le switch  
+- Pour palier le problème de rebond, mise en place d'une capacité en parrallèle avec le switch  
