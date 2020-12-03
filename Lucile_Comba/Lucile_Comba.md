@@ -47,6 +47,10 @@ Séance du 26/11/20
 
 Séance du 03/12/20  
 - 
-- 
+- test du capteur anémomètre avec le condensateur : constatation d'un problème d'interruption (1 puis 4)  
+- test à l'oscilloscope : aucun rebond détectable  
+- test externe avec un GBF -> ça marche
+- même test en remplancant l'anémomètre par le pluviomètre : aussi des problèmes d'interruptions  
+- ressoudure d'un nouveau RJ-11  
 
 
