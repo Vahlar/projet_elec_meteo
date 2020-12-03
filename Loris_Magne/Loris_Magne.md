@@ -45,7 +45,7 @@ Séance du 26/11/2020
 
 Séance du 03/12/2020
 - 
-- On a remarqué un problème du nombre d'incrémentation d'interruption : 1x 1 interruption et 1x 4 interruption (peut être pb au niveay d'un aimant)  
+- On a remarqué un problème du nombre d'incrémentation d'interruption : 1x 1 interruption et 1x 4 interruption (peut être problème au niveau d'un aimant)  
 - On a constaté le même problème sur le pluviomètre  
 - Test du code en générant un signal carré avec le GBF --> code fonctionne bien pour le pluviomètre et l'anémomètre  
 - Refabrication de l'adaptateur RJ11 pour éliminer un possible problème côté connecteur  
