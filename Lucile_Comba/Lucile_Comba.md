@@ -43,6 +43,10 @@ Séance du 26/11/20
 - cablage de l'anémometre avec l'adaptateur RJ11
 - test avec ce cablage : il ne fonctionne pas, il faut le ressouder
 - test sans le RJ11 (en tenant les cables) : problèmes de rebonds
-- mise en place d'un condensateur (220 pF) en parallèle de l'anémomètre
+- mise en place d'un condensateur (220 pF) en parallèle de l'anémomètre  
+
+Séance du 03/12/20  
+- 
+- 
 
 
