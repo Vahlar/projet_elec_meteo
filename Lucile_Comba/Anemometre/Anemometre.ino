@@ -27,7 +27,7 @@ void setup()
   Serial.println();
 
   //at each lap: call of the function to increment the number of rotation
-  attachInterrupt(digitalPinToInterrupt(PinA), launchAnemometerProcess, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(PinA), launchAnemometerProcess, RISING);
 
 }
 
@@ -39,7 +39,7 @@ void loop()
   if ((instant - previous_millis) >= measurementPeriod)     //if the measurement period has passed
   {
     Speed = (nbRotation / (measurementPeriod * 0.001)) * 2.4;   //A wind speed of 2.4 km/h causes the switch to close once per second
-
+                                                                // measurementPeriod * 0.001 is used to define interrupt/sec depending on the periode
     //Display of the speed
     Serial.println(nbRotation);
     Serial.print("wind speed: ");   
