@@ -34,3 +34,9 @@ Séance du 08/10 :
 -Test de l'addaptateur (il ne fonctionne pas, il y a un problème de soudure)    
 -Le code de l'anémomètre fonctionne avec le bouton poussoir    
 -Nous avons repérer un problème de rebond (mise en place d'une capa de 220 PF en parrallèle du switch)    
+
+03/12/2020 :  
+-Test du code de l'anémomètre en rajoutant une capacité pour éviter les rebonds (vérification à l'oscilloscope, il n'y a pas de rebond)    
+-Test du code de l'anémomètre avec un GBF qui symbolyse les intérruptions (le code fonctionne)    
+-L'anémomètre ne semble pas fonctionner nous avons toujours des problèmes avec les intérruptions( valeur irrégulière)    
+-Soudure d'un nouvel addaptateur (en attendant le nouvel anémomètre)    
