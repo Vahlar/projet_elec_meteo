@@ -45,7 +45,17 @@ Séance du 26/11/2020
 
 Séance du 03/12/2020
 - 
-- On a remarqué un problème du nombre d'incrémentation d'interruption sur l'anémomètre : 1x 1 interruption et 1x 4 interruption (peut être problème au niveau d'un aimant)  
+- On a remarqué un problème du nombre d'incrémentation d'interruptions sur l'anémomètre : 1x 1 interruption et 1x 4 interruption (peut être problème au niveau d'un aimant)  
 - On a constaté le même problème sur le pluviomètre  
 - Test du code en générant un signal carré avec le GBF --> code fonctionne bien pour le pluviomètre et l'anémomètre  
 - Refabrication de l'adaptateur RJ11 pour éliminer un possible problème côté connecteur  
+
+Séance du 04/12/2020
+- 
+- Poursuite de la recherche du problème au niveau du nombre d'interruptions  
+- Solution --> mise en place d'un timer qui permet d'ignorer les interruptions s'il ne s'est pas passé assez de temps entre chacune  
+- Test de l'anémomètre et du pluviomètre --> câblage et code fonctionnent
+- Fabrication d'un nouvel adaptateur RJ11 pour connecter la girouette  
+- Recherche du fonctionnement du mode deep sleep afin de pouvoir réveiller l'ESP32 lors d'une interruption provenant du pluviomètre ou au bout de 15min (timer)  
+- Implémentation d'un premier code pour gérer la fonction d'endormissement et de réveil  
+- 
