@@ -58,4 +58,3 @@ Séance du 04/12/2020
 - Fabrication d'un nouvel adaptateur RJ11 pour connecter la girouette  
 - Recherche du fonctionnement du mode deep sleep afin de pouvoir réveiller l'ESP32 lors d'une interruption provenant du pluviomètre ou au bout de 15min (timer)  
 - Implémentation d'un premier code pour gérer la fonction d'endormissement et de réveil  
-- 
