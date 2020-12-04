@@ -44,3 +44,18 @@ Nicolas Heissler
 -Vérification du bon fonctionnement de l'anémomètre (sans le RJ11 -> en tenant les câbles ) 
 -> détection problème de rebond 
 -> mise en place d'une capa de 220pF en parallèle du switch
+
+03/12/2020 :
+-
+-Test de l'anémometre -> problème d'interruption interne (test externe avec GBF du code -> OK)
+-Soudure d'un nouvel adaptateur RJ-11 car ancien défectueux
+-Modification du code de test de l'anémomètre
+-Modification du code de test du pluviomètre
+
+04/12/2020 :
+-
+-Changement du code de l'anémometre -> fonctionnel
+-Changement du code de pluviometre -> fonctionnel
+-Test du mode light_sleep -> le fonctionnement n'est pas adapté à notre projet
+-Réalisation d'un code de test pour le deepsleep sur le pluviometre (reveil pour les interruption et/ou un timer)
+-> Un réveil d'interruption reset le timer pour le wakeup (voir comment trouver le temps entre le début du timer et l'interruption)
