@@ -40,3 +40,9 @@ Séance du 08/10 :
 -Test du code de l'anémomètre avec un GBF qui symbolyse les intérruptions (le code fonctionne)    
 -L'anémomètre ne semble pas fonctionner nous avons toujours des problèmes avec les intérruptions( valeur irrégulière)    
 -Soudure d'un nouvel addaptateur (en attendant le nouvel anémomètre)    
+
+04/12/2020 :  
+-Rajout d'une condition pour empêcher les multiples intéruptions sur un seul front montant    
+-Câblage de la girouette (girouette pas encore fonctionnel problème de code)    
+-Test de la girouette avec un voltmètre (la girouette fonctionne)    
+-test de la fonction deepsleep avec le pluviomètre (pas encore fonctionnel)    
