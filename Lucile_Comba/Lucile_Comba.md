@@ -33,7 +33,7 @@ Séance du 22/10/20
 Séance du 19/11/20  
 -    
 - test du code du pluviomètre (avec bouton poussoir)  
-- problèmes de cablage : pouton poussoir défectueux et problème de pin 
+- problèmes de cablage : pouton poussoir défectueux + problème de pin 
 - les modifcations apportées ont résolu les problèmes
 
 Séance du 26/11/20  
@@ -51,6 +51,16 @@ Séance du 03/12/20
 - test à l'oscilloscope : aucun rebond détectable  
 - test externe avec un GBF -> ça marche
 - même test en remplancant l'anémomètre par le pluviomètre : aussi des problèmes d'interruptions  
-- ressoudure d'un nouveau RJ-11  
+- ressoudure d'un nouveau RJ-11 
+
+
+Séance du 04/12/20  
+- 
+- correction du code du pluviomètre et de l'anénomètre pour empécher les multiples interuptions sur un seul pront montant  
+- test du nouveau codes pour les deux capteurs -> ça marche  
+- lecture de la datasheet de la girouette  
+- mise en place du clablage de la girouette  
+- utilistion dans le code de la fonction analogRead : problème CAN non linéaire pour ESP32  
+- modification du code pour prendre en compte les atténuations  
 
 
