@@ -54,7 +54,7 @@ Séance du 04/12/2020
 - 
 - Poursuite de la recherche du problème au niveau du nombre d'interruptions  
 - Solution --> mise en place d'un timer qui permet d'ignorer les interruptions s'il ne s'est pas passé assez de temps entre chacune  
-- Test de l'anémomètre et du pluviomètre --> câblage et code fonctionnent
+- Test de l'anémomètre et du pluviomètre --> câblage et code fonctionnels
 - Fabrication d'un nouvel adaptateur RJ11 pour connecter la girouette  
 - Recherche du fonctionnement du mode deep sleep afin de pouvoir réveiller l'ESP32 lors d'une interruption provenant du pluviomètre ou au bout de 15min (timer)  
 - Implémentation d'un premier code pour gérer la fonction d'endormissement et de réveil  
