@@ -29,3 +29,7 @@ CR 19/11/2020
 CR 26/11/2020
 
 - Test du code de l'anémomètre (problème de rebonds pour le moment)
+
+CR 03/12/2020
+
+-Absent
