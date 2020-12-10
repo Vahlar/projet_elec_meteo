@@ -65,6 +65,7 @@ Séance du 04/12/20
 
 Séance du 10/12/20  
 - 
+- participation à l'implémentation du code pour gérer la fonction sleep de l'ESP32
 - recherche pour corriger le problème de non linéarité de l'acd  
 - modification du code de la girouette  
 
