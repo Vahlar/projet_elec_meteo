@@ -60,7 +60,11 @@ Séance du 04/12/20
 - test du nouveau code pour les deux capteurs -> ça marche  
 - lecture de la datasheet de la girouette  
 - mise en place du clablage de la girouette  
-- utilistion dans le code de la fonction analogRead : problème CAN non linéaire pour ESP32  
-- modification du code pour prendre en compte les atténuations  
+- utilistion dans le code de la fonction analogRead : problème CAN non linéaire pour ESP32   
+
+Séance du 10/12/20  
+- 
+- correction du code du pluviomètre et de l'anénomètre pour empécher les multiples interuptions sur un seul front montant  
+
 
 
