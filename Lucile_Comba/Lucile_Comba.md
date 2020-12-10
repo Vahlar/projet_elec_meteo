@@ -64,7 +64,8 @@ Séance du 04/12/20
 
 Séance du 10/12/20  
 - 
-- correction du code du pluviomètre et de l'anénomètre pour empécher les multiples interuptions sur un seul front montant  
+- recherche pour corriger le problème de non linéarité de l'acd  
+- modification du code de la girouette  
 
 
 
