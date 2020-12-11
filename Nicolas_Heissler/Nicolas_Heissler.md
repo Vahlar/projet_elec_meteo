@@ -57,5 +57,12 @@ Nicolas Heissler
 -Changement du code de l'anémometre -> fonctionnel
 -Changement du code de pluviometre -> fonctionnel
 -Test du mode light_sleep -> le fonctionnement n'est pas adapté à notre projet
--Réalisation d'un code de test pour le deepsleep sur le pluviometre (reveil pour les interruption et/ou un timer)
+-Réalisation d'un code de test pour le deepSleep sur le pluviometre (reveil pour les interruption et/ou un timer)
 -> Un réveil d'interruption reset le timer pour le wakeup (voir comment trouver le temps entre le début du timer et l'interruption)
+
+10/11/2020 :
+-
+-Etude sur le mode deepsleep pour fonctionnement du système complet sur ce mode
+-Modification du code de test du pluviometre en mode deepSleep
+-Aide pour réalisation du code de la girouette avec Lucile
+-Test de différent réveil de l'esp32 en mode deepSleep (interrupt, timer, entryLevel)
