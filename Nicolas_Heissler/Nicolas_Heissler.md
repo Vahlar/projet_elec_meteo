@@ -60,9 +60,13 @@ Nicolas Heissler
 -Réalisation d'un code de test pour le deepSleep sur le pluviometre (reveil pour les interruption et/ou un timer)
 -> Un réveil d'interruption reset le timer pour le wakeup (voir comment trouver le temps entre le début du timer et l'interruption)
 
-10/11/2020 :
+10/12/2020 :
 -
 -Etude sur le mode deepsleep pour fonctionnement du système complet sur ce mode
 -Modification du code de test du pluviometre en mode deepSleep
 -Aide pour réalisation du code de la girouette avec Lucile
 -Test de différent réveil de l'esp32 en mode deepSleep (interrupt, timer, entryLevel)
+
+17/12/2020 :
+-
+-Modification du code de deepsleep pour fonctionner avec timer+interruption (oui pendant 4h)
