@@ -1,1 +1,53 @@
 ENVOYER LES MESSAGES TOUS LES QUARTS D'HEURES
+
+======== A propos de  : system_get_time
+extrait de  : hardware/espressif/esp32/tools/sdk/include/esp32/esp_system.h
+/**
+  * @brief  Get system time, unit: microsecond.
+  *
+  * This function is deprecated. Use 'gettimeofday' function for 64-bit precision.
+  * This definition will be removed in a future release.
+  */
+uint32_t system_get_time(void)  __attribute__ ((deprecated));
+
+Il faut donc éviter d'utiliser system_get_time
+
+
+======== pour gettimeofday , voir 
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/system_time.html
+
+
+======== vous pouvez tester 
+time_t now;
+char strftime_buf[64];
+struct tm timeinfo;
+
+esp_sleep_wakeup_cause_t wakeup_reason;
+
+
+void setup() {
+  // put your setup code here, to run once:
+// Set timezone to China Standard Time
+setenv("TZ", "CST-8", 1);
+tzset();
+
+Serial.begin(115200);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+time(&now);
+
+localtime_r(&now, &timeinfo);
+strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
+//ESP_LOGI(TAG, "The current date/time in Shanghai is: %s", strftime_buf);  
+Serial.println("=== wakeup ======");
+Serial.println(strftime_buf);
+delay(1100);
+  esp_sleep_enable_timer_wakeup(10000000ULL);
+  Serial.println("=== goto sleep ======");
+
+  esp_deep_sleep_start();
+
+}
