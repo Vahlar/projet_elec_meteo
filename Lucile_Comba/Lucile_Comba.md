@@ -69,5 +69,10 @@ Séance du 10/12/20
 - recherche pour corriger le problème de non linéarité de l'acd  
 - modification du code de la girouette  
 
+Séance du 17/12/20  
+- 
+- participation aux recherches pour modifier la fonction sleep de l'ESP32 (problème du timer)
+- test du nouveau code de la girouette
+- modification du code de la girouette  
 
 
