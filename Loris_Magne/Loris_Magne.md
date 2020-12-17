@@ -68,4 +68,3 @@ Séance du 17/12/2020
 -
 - Poursuite de l'implémentation du code permettant de gérer la fonction d'endormissement et de réveil  
 - Analyse et mise à jour du PCB  
-- 
