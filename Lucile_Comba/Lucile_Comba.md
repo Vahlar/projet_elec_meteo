@@ -71,8 +71,8 @@ Séance du 10/12/20
 
 Séance du 17/12/20  
 - 
-- participation aux recherches pour modifier la fonction sleep de l'ESP32 (problème du timer)
-- test du nouveau code de la girouette
+- participation aux recherches pour modifier la fonction sleep de l'ESP32 (problème du timer)  
+- test du nouveau code de la girouette  
 - modification du code de la girouette  
 
 
