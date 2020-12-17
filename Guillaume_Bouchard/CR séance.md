@@ -52,3 +52,9 @@ Séance du 08/10 :
 -Recherche des librairies qui ont été utilisé par le groupe précedent (il faut avoir exactement les mêmes librairies)  
 -Analyse du PCB pour voir s'il est possible de rajouter les composants qui nous manque (problème de place)  
 -Mise en place de la première ébauche de la fonction sleep sur le pluviomètre (ça ne fonctionne pas pour le momment)  
+
+
+17/12/2020 :  
+-Modification du schéma initial sur Eagle    
+-rajout des capteurs sur Eagle    
+
