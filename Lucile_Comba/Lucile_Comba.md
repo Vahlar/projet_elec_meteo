@@ -75,4 +75,9 @@ Séance du 17/12/20
 - test du nouveau code de la girouette -> marche pas  
 - modification du code de la girouette  
 
+Séance du 08/01/21  
+- 
+- réalisation du Powerpoint de présentation  
+- création des ordinogrammes des codes   
+
 
