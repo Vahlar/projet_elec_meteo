@@ -70,3 +70,9 @@ Nicolas Heissler
 17/12/2020 :
 -
 -Modification du code de deepsleep pour fonctionner avec timer+interruption (oui pendant 4h)
+
+08/01/2021 :
+-
+-Création d'un code de gestion du deepsleep avec une autre méthode car la méthode utilisé est obsolète
+-Création d'ordinogramme pour tout les codes de tests pour les intégrer dans le diaporama de présentation de mi parcours du projet
+-Création et modification du diaporama de présentation de mi parcours du projet
