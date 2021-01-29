@@ -76,3 +76,9 @@ Nicolas Heissler
 -Création d'un code de gestion du deepsleep avec une autre méthode car la méthode utilisé est obsolète 
 -Création d'ordinogramme pour tout les codes de tests pour les intégrer dans le diaporama de présentation de mi parcours du projet 
 -Création et modification du diaporama de présentation de mi parcours du projet 
+
+29/01/2021 :
+-
+-Finition du code de test de la gestion du deepsleep avec une méthode non obsolete (variable time_t, timediff etc...) 
+-Début des tests du module LoRa, le câblage à été revu et le code également, en fin de séance le module était initialisé (envoi testé pas reception) 
+-Configuration du code de récéption de LoRa pour le module TTGO (LoRa externe pour test) 

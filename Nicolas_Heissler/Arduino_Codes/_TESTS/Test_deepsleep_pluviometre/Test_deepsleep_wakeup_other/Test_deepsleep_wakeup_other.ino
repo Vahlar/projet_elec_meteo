@@ -10,24 +10,15 @@
 ///--- Variables
 time_t now;
 char strftime_buf[64];
-struct tm timeinfo;
-int hours,minutes,seconds;
 
 RTC_DATA_ATTR int nbRocker = 0;         //number of rockers (saved on RTC memory)
-RTC_DATA_ATTR unsigned long lastTimeDataSent;
+RTC_DATA_ATTR time_t lastTimeDataSent;
 RTC_DATA_ATTR unsigned long timePassed; 
 float qtyRain = 0;                      //quantity of rain (mm)
 esp_sleep_source_t wakeUpReason;        //reason of the waking up
 
-unsigned long timePassed(char cValue[]);
-
 void setup() 
 {
-  // put your setup code here, to run once:
-  // Set timezone to China Standard Time
-  setenv("TZ", "CST-8", 1);
-  tzset();
-
   pinMode(PinP, INPUT_PULLDOWN);
   Serial.begin(9600);
   Serial.println("");
@@ -45,14 +36,12 @@ void loop()
   switch(wakeUpReason)
   {
     case ESP_SLEEP_WAKEUP_EXT0 :
-      Serial.print("Waked up by external interruption : ");
       nbRocker += 1;
-      Serial.println(nbRocker);
-      localtime_r(&now, &timeinfo);
-      strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
-      Serial.println(strftime_buf);
-      timePassed = timePassed(strftime_buf);
-      Serial.println(timePassed);
+      Serial.printf("Waked up by external interruption : %d \n",nbRocker);
+      Serial.printf("Current time : %d s \n", now);
+      timePassed = difftime(now, lastTimeDataSent) * 1000000; //timePassed need to be in us
+      Serial.printf("Data passed since last send : %l us \n",timePassed);
+      esp_sleep_enable_timer_wakeup(10000000ULL - timePassed);
     break;
 
     case ESP_SLEEP_WAKEUP_TIMER :
@@ -64,7 +53,7 @@ void loop()
       Serial.printf("Quantity of rain : %f L/m²\n", qtyRain);
       nbRocker = 0;
       timePassed = 0;
-      localtime_r(&lastTimeDataSent, &timeinfo);
+      time(&lastTimeDataSent);
       esp_sleep_enable_timer_wakeup(10000000ULL - timePassed);
     break;
 
@@ -73,30 +62,8 @@ void loop()
       esp_sleep_enable_timer_wakeup(10000000ULL - timePassed);      
     break;
   }
-
-/*localtime_r(&now, &timeinfo);
-strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
-//ESP_LOGI(TAG, "The current date/time in Shanghai is: %s", strftime_buf);  
-Serial.println("=== wakeup ======");
-Serial.println(strftime_buf);
-delay(1100);
-  esp_sleep_enable_timer_wakeup(10000000ULL);
-  */
   Serial.println("=== goto sleep ======");
 
   esp_deep_sleep_start();
 
-}
-
-unsigned long timePassed(char cValue[])
-{
- // Hours are 12 & 13
- hours = atoi(cValue[12]&cValue[13]);
- // Minutes are 15 & 16
- minutes = atoi(cValue[15]&cValue[16]);
- // Seconds are 18 & 19
- seconds = atoi(cValue[18]&cValue[19]);
-  Serial.print(hours);Serial.print(minutes);Serial.print(seconds);
-
-  return 0;
 }
