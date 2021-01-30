@@ -58,3 +58,6 @@ Séance du 08/10 :
 -Modification du schéma initial sur Eagle    
 -rajout des capteurs sur Eagle    
 
+30/01/2021:  
+-Modification du schéma initial sur Eagle (rajout des capteurs, et du module LORA)  
+-Modification du schéma de clablâge du module Lora en accords avec le PCB
