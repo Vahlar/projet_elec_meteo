@@ -80,4 +80,9 @@ Séance du 08/01/21
 - réalisation du Powerpoint de présentation  
 - création des ordinogrammes des codes   
 
-
+Séance du 29/01/21
+-
+- réalisation du tableau excel pour améliorer le tableau d'avancement  
+- Avancement du code de la girouette (mais matériel pas disponible pour tester pas puour tester durant la séance)  
+- réalisation des tests du module LoRa, cablâge revue, en fin de séance le module était initialisé (envoi testé pas reception)  
+- Configuration du code de récéption de LoRa pour le module TTGO (LoRa externe pour test) 
