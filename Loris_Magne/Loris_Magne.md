@@ -68,3 +68,8 @@ Séance du 17/12/2020
 -
 - Poursuite de l'implémentation du code permettant de gérer la fonction d'endormissement et de réveil  
 - Analyse et mise à jour du PCB sur Eagle afin d'y intégrer un module LoRa supplémentaire
+
+Séance du 29/01/2021
+-
+- Test des modules LoRa et du code associé --> pas concluant pour le moment...  
+- Commencement d'un gantt pour adapté, en prenant en compte les remarques lors de la 1ère présentation  
