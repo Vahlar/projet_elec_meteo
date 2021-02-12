@@ -3,12 +3,16 @@
 #include <SPI.h>
 
 ///--- CONST
-#define LoraReveicerBand 868E6
+#define LoraReveicerBand 866E6
 
 // Lora Receiver
-//#define reveicer_rst  
-//#define reveicer_dio0 
-//#define reveicer_ss   5
+#define receiver_rst  14
+#define receiver_dio0 26
+#define receiver_ss   18 // 5 ESP, 18 TTGO
+#define SCK           5  // 18 ESP, 5 TTGO
+#define MISO          19
+#define MOSI          27  // 23 ESP, 27 TTGO
+#define CS            18
 
 ///--- VARIABLES
 int messageNumber = 0;
