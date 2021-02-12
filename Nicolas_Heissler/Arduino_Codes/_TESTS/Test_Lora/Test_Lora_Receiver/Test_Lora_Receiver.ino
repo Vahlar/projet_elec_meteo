@@ -24,7 +24,10 @@ void setup()
 
   Serial.println("LoRa Receiver");
 
- // LoRa.setPins(reveicer_ss, reveicer_rst, reveicer_dio0);
+  SPI.begin(SCK,MISO,MOSI,CS);
+
+  LoRa.setPins(receiver_ss, receiver_rst, receiver_dio0);
+  
   while (!LoRa.begin(LoraReveicerBand)) 
   {
     Serial.println("Starting LoRa failed !");
