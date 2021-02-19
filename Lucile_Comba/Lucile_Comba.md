@@ -85,14 +85,15 @@ Séance du 29/01/21
 - réalisation du tableau excel pour améliorer le tableau d'avancement  
 - Avancement du code de la girouette (mais matériel pas disponible pour tester durant la séance)  
 - réalisation des tests du module LoRa, cablâge revue, en fin de séance le module était initialisé (envoi testé pas reception)  
-- Configuration du code de récéption de LoRa pour le module TTGO (LoRa externe pour test) 
+- Configuration du code de récéption de LoRa pour le module TTGO (LoRa externe pour test)  
 
 Séance du 12/02/21
 -
--
--
--
--
+- Finition du tableau d'avancement  
+- Problème d'initialisation du module Lora => Debuggage du câblage du module LoRa : breadBoard mère non fonctionnelle  
+- Tests du bon fonctionnement de nouveaux cables 
+- Participation au câblage d'un module RFM95 sur une nouvelle breadBoard
+- Tests d'échanges entre le RFM95 et le module TTGO -> tests fonctionnels  
 
 Séance du 19/02/21
 -
