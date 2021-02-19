@@ -82,3 +82,12 @@ Nicolas Heissler
 -Finition du code de test de la gestion du deepsleep avec une méthode non obsolete (variable time_t, timediff etc...)  
 -Début des tests du module LoRa, le câblage à été revu et le code également, en fin de séance le module était initialisé (envoi testé pas reception)  
 -Configuration du code de récéption de LoRa pour le module TTGO (LoRa externe pour test)  
+
+12/02/2021 :
+-
+-Debuggage du câblage du module LoRa -> breadBoard mère non fonctionnelle  
+-Câblage d'un module RFM95 sur une nouvelle breadBoard puis tests d'échanges entre le RFM95 et le module TTGO -> tests fonctionnels  
+-Réécriture du code d'envoi/reception de message avec module LoRa  
+
+19/02/2021 :
+-

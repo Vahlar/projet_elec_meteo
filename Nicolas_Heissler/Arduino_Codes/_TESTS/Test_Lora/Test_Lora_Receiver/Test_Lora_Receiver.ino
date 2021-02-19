@@ -8,11 +8,11 @@
 // Lora Receiver
 #define receiver_rst  14
 #define receiver_dio0 26
-#define receiver_ss   18 // 5 ESP, 18 TTGO
-#define SCK           5  // 18 ESP, 5 TTGO
+#define receiver_ss   5 // 5 ESP, 18 TTGO
+#define SCK           18  // 18 ESP, 5 TTGO
 #define MISO          19
-#define MOSI          27  // 23 ESP, 27 TTGO
-#define CS            18
+#define MOSI          23  // 23 ESP, 27 TTGO
+#define CS            5   // 5 ESP,  18 TTGO
 
 ///--- VARIABLES
 int messageNumber = 0;
@@ -31,6 +31,7 @@ void setup()
   while (!LoRa.begin(LoraReveicerBand)) 
   {
     Serial.println("Starting LoRa failed !");
+    delay(1000);
   }
   
   Serial.println("Starting LoRa sucessfully !");
@@ -50,6 +51,7 @@ void loop()
       Serial.print((char)LoRa.read());
     }
     // print RSSI of packet
+    Serial.println("");
     Serial.print("' with RSSI ");
     Serial.println(LoRa.packetRssi());
   }
