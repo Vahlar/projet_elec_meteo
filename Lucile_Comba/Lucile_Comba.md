@@ -96,10 +96,8 @@ Séance du 12/02/21
 - Tests d'échanges entre le RFM95 et le module TTGO -> tests fonctionnels  
 
 Séance du 19/02/21
--
--
--
--
+- cablage pour tester le code pour gérer 2 modules LoRa
+- tests de communication entre la balance, les modules LoRa et la gateway
 
 Séance du 05/03/21
 -
