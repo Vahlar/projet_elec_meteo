@@ -88,5 +88,5 @@ Séance du 05/03/2021
 -
 - Ré-utilisation de l'ancienne plaque Labdec pour test Girouette
 - Test de fonctionnement --> echec  
-- Mesures des tensions au multimètre, sur la breadboard ainsi que sur le connecteur RJ11 de la Girouette
-- Source du problème : câblage de l'adaptateur RJ45
+- Mesures des tensions au multimètre, sur la breadboard ainsi que sur le connecteur RJ11 de la Girouette  
+- Source du problème : câblage de l'adaptateur RJ45  
