@@ -103,6 +103,10 @@ Séance du 19/02/21
 
 Séance du 05/03/21
 -
--
--
--
+- utilisation de l'ancienne plaque Labdec pour tester le code de la girouette  
+- problème au niveau de la valeur de la tension retournée sur l'ADC1
+- réalisation de mesures des tensions sur la breadboard au multimètre ainsi que sur le connecteur RJ11 de la Girouette  
+- Source du problème : câblage de l'adaptateur RJ45  
+- réalisation d'un tableau de valeur de la tesion au borne de la résistance variable de la girouette en fonction de l'angle pour un Vcc=3,3V
+- vérification/comparaison entre les valeurs du tableau, la tension mesurée avec le multimetre et celles visible sur le moniteur série  
+
