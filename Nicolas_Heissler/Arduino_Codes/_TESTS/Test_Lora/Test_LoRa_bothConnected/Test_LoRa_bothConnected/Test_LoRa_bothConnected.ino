@@ -4,21 +4,27 @@
 
 ///--- CONST
 #define LoraSenderBand 866E6
+#define measure 13
+
+LoRaClass LoRa0;
+LoRaClass LoRa1;
 
 // Lora Sender
-#define sender_rst  14
-#define sender_dio0 26
-#define sender_ss   27   // 5 ESP, 18 TTGO
+#define sender_rst    14
+#define sender_dio0   26
+#define sender_ss     5
+#define sender_cs     5
 
 // Lora Receiver
-#define receiver_rst  14
-#define receiver_dio0 26
-#define receiver_ss   5 // 5 ESP, 18 TTGO
+#define sender2_rst  14
+#define sender2_dio0 27
+#define sender2_ss   4
+#define sender2_cs   4
 
-#define SCK         5  // 18 ESP, 5 TTGO
-#define MISO        19
-#define MOSI        27  // 23 ESP, 27 TTGO
-#define CS          5
+// SCK, MISO, MOSI is the same pin for both LoRa devices
+#define SCK           18 
+#define MISO          19
+#define MOSI          27
 
 ///--- VARIABLES
 int messageNumber = 0;
@@ -28,35 +34,62 @@ void setup()
   Serial.begin(9600);
   while (!Serial);
 
-  Serial.println("LoRa Sender");
+  //Define both chip select as output
+  pinMode (sender_cs,   OUTPUT);
+  pinMode (sender2_cs,  OUTPUT);
+  pinMode (measure,     OUTPUT);
 
-  SPI.begin(SCK,MISO,MOSI,CS);
-  
-  LoRa.setPins(sender_ss, sender_rst, sender_dio0);
+  SPI.begin();
 
-  //LoRa.setPins(receiver_ss, receiver_rst, receiver_dio0);
-  
-  while (!LoRa.begin(LoraSenderBand)) 
+  //Initiate sender LoRa device
+  Serial.println("LoRa sender");
+  digitalWrite(measure, HIGH);
+  LoRa0.setPins(sender_ss, sender_rst, sender_dio0);
+  while (!LoRa0.begin(LoraSenderBand)) 
   {
-    Serial.println("Starting LoRa failed !");
+    Serial.println("Starting sender LoRa failed !");
     delay(500);
   }
-  
-  Serial.println("Starting LoRa sucessfully !");
+  Serial.println("Starting sender LoRa successfully !");
+//  digitalWrite(measure, LOW);
+  delay(1000);
+
+/*
+  //Initiate receiver LoRa device
+  Serial.println("LoRa1 sender");
+  LoRa1.setPins(sender2_ss, sender2_rst, sender2_dio0);  
+  while (!LoRa1.begin(LoraSenderBand)) 
+  {
+    Serial.println("Starting sender 2 LoRa failed !");
+    delay(500);
+  }
+  Serial.println("Starting sender 2 LoRa successfully !");
+  */
 }
 
 void loop()
-{
+{  
   Serial.print("Sending packet: ");
   Serial.println(messageNumber);
 
-  // send packet
-  LoRa.beginPacket();
-  LoRa.print("Aloha ");
-  LoRa.print(messageNumber);
-  LoRa.endPacket();
+  //Send packet code
+//  digitalWrite(measure, HIGH);
+  LoRa0.beginPacket();
+  Serial.println("test 1");
+  LoRa0.print("Message from first sender number : ");
+  LoRa0.print(messageNumber);
+  Serial.println("test 2");
+  LoRa0.endPacket();
+  Serial.println("test 3");
+//  digitalWrite(measure, LOW);
 
+  //Sender 2 packet code
+//  LoRa1.beginPacket();
+//  LoRa1.print("Message from sender 2 number : ");
+//  LoRa1.print(messageNumber);
+//  LoRa1.endPacket();
+ 
+ 
   messageNumber++;
-
-  delay(5000);
+  delay(3000);
 }

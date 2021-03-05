@@ -91,3 +91,9 @@ Nicolas Heissler
 
 19/02/2021 :
 -
+-Test de chaine d'envoi en LoRa (balance -> esp32 (2 modules) -> gateway  
+-Modification du code pour gérer 2 modules LoRa (RFM95) en cours  
+
+05/03/2021 :
+-
+
