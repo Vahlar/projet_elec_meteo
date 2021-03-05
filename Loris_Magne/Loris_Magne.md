@@ -73,3 +73,17 @@ Séance du 29/01/2021
 -
 - Test des modules LoRa et du code associé --> pas concluant pour le moment...  
 - Commencement d'un gantt pour adapté, en prenant en compte les remarques lors de la 1ère présentation  
+
+Séance du 12/02/2021
+-
+- Plaque Labdec principale non fonctionnelle, analyse de l'intégralité du cablâge  
+- Câblage d'un autre module LoRa RFM95 sur seconde plaqu labdec pour essais de fonctionnement envoi / reception  
+- Test concluants  
+
+Séance du 19/02/2021
+-
+- Tests de communication entre la balance, les modules LoRa et la gateway
+
+Séance du 05/03/2021
+-
+- 
