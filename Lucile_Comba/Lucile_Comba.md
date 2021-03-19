@@ -114,7 +114,7 @@ Séance du 12/03/21
 - test de l'anénmomètre après réparation : OK  
 - vérification/comparaison entre les valeurs du tableau, la tension mesurée avec le multimetre et celles visible sur le moniteur série  
 - détection d'un problème au niveau du channel et de l'atténuation  
-- tension d'alimentation différente --> relevé de la tention de la résistence interne de la girouette avec un analogread() puis avec l'aténuation  
+- variation de la tension d'alimentation --> relevé de la tention de la résistence interne de la girouette avec un analogread() puis avec l'aténuation  
 
 Séance du 19/03/21
 -
