@@ -96,6 +96,7 @@ Séance du 12/02/21
 - Tests d'échanges entre le RFM95 et le module TTGO -> tests fonctionnels  
 
 Séance du 19/02/21
+-
 - cablage pour tester le code pour gérer 2 modules LoRa
 - tests de communication entre la balance, les modules LoRa et la gateway
 
@@ -107,4 +108,16 @@ Séance du 05/03/21
 - Source du problème : câblage de l'adaptateur RJ45  
 - réalisation d'un tableau de valeur de la tesion au borne de la résistance variable de la girouette en fonction de l'angle pour un Vcc=3,3V
 - vérification/comparaison entre les valeurs du tableau, la tension mesurée avec le multimetre et celles visible sur le moniteur série  
+
+Séance du 12/03/21
+-
+- test de l'anénmomètre après réparation : OK  
+- vérification/comparaison entre les valeurs du tableau, la tension mesurée avec le multimetre et celles visible sur le moniteur série  
+- détection d'un problème au niveau du channel et de l'atténuation  
+- tension d'alimentation différente --> relevé de la tention de la résistence interne de la girouette avec un analogread() puis avec l'aténuation  
+
+Séance du 19/03/21
+-
+-
+
 
