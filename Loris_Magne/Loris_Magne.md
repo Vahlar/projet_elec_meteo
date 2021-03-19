@@ -96,3 +96,7 @@ Séance du 12/03/2021
 - Test de l'anénmomètre après réparation : OK  
 - Test du code de la girouette : problème au niveau du channel et de l'atténuation
 - Tension d'alimentation différente -->  nouveau tableau de correspondance des tensions en fonction de l'évolution de la résistance interne, donc de le direction du vent
+
+Séance du 19/03/2021
+-
+
