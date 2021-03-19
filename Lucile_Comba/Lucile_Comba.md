@@ -83,19 +83,20 @@ Séance du 08/01/21
 Séance du 29/01/21
 -
 - réalisation du tableau excel pour améliorer le tableau d'avancement  
-- Avancement du code de la girouette (mais matériel pas disponible pour tester durant la séance)  
+- avancement du code de la girouette (mais matériel pas disponible pour tester durant la séance)  
 - réalisation des tests du module LoRa, cablâge revue, en fin de séance le module était initialisé (envoi testé pas reception)  
-- Configuration du code de récéption de LoRa pour le module TTGO (LoRa externe pour test)  
+- configuration du code de récéption de LoRa pour le module TTGO (LoRa externe pour test)  
 
 Séance du 12/02/21
 -
-- Finition du tableau d'avancement  
-- Problème d'initialisation du module Lora => Debuggage du câblage du module LoRa : breadBoard mère non fonctionnelle  
-- Tests du bon fonctionnement de nouveaux cables 
-- Participation au câblage d'un module RFM95 sur une nouvelle breadBoard
-- Tests d'échanges entre le RFM95 et le module TTGO -> tests fonctionnels  
+- finition du tableau d'avancement  
+- problème d'initialisation du module Lora => Debuggage du câblage du module LoRa : breadBoard mère non fonctionnelle  
+- tests du bon fonctionnement de nouveaux cables 
+- participation au câblage d'un module RFM95 sur une nouvelle breadBoard
+- tests d'échanges entre le RFM95 et le module TTGO -> tests fonctionnels  
 
 Séance du 19/02/21
+-
 - cablage pour tester le code pour gérer 2 modules LoRa
 - tests de communication entre la balance, les modules LoRa et la gateway
 
@@ -104,7 +105,19 @@ Séance du 05/03/21
 - utilisation de l'ancienne plaque Labdec pour tester le code de la girouette  
 - problème au niveau de la valeur de la tension retournée sur l'ADC1
 - réalisation de mesures des tensions sur la breadboard au multimètre ainsi que sur le connecteur RJ11 de la Girouette  
-- Source du problème : câblage de l'adaptateur RJ45  
+- source du problème : câblage de l'adaptateur RJ45  
 - réalisation d'un tableau de valeur de la tesion au borne de la résistance variable de la girouette en fonction de l'angle pour un Vcc=3,3V
 - vérification/comparaison entre les valeurs du tableau, la tension mesurée avec le multimetre et celles visible sur le moniteur série  
+
+Séance du 12/03/21
+-
+- test de l'anénmomètre après réparation : OK  
+- vérification/comparaison entre les valeurs du tableau, la tension mesurée avec le multimetre et celles visible sur le moniteur série  
+- détection d'un problème au niveau du channel et de l'atténuation  
+- variation de la tension d'alimentation --> relevé de la tention de la résistence interne de la girouette avec un analogread() puis avec l'aténuation  
+
+Séance du 19/03/21
+-
+-
+
 
