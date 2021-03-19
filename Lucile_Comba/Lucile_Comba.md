@@ -106,18 +106,19 @@ Séance du 05/03/21
 - problème au niveau de la valeur de la tension retournée sur l'ADC1
 - réalisation de mesures des tensions sur la breadboard au multimètre ainsi que sur le connecteur RJ11 de la Girouette  
 - source du problème : câblage de l'adaptateur RJ45  
-- réalisation d'un tableau de valeur de la tesion au borne de la résistance variable de la girouette en fonction de l'angle pour un Vcc=3,3V
-- vérification/comparaison entre les valeurs du tableau, la tension mesurée avec le multimetre et celles visible sur le moniteur série  
+- réalisation d'un tableau de valeur de la tesion au borne de la résistance variable de la girouette en fonction de l'angle pour un Vcc=3,3V  
 
 Séance du 12/03/21
 -
 - test de l'anénmomètre après réparation : OK  
 - vérification/comparaison entre les valeurs du tableau, la tension mesurée avec le multimetre et celles visible sur le moniteur série  
 - détection d'un problème au niveau du channel et de l'atténuation  
-- variation de la tension d'alimentation --> relevé de la tention de la résistence interne de la girouette avec un analogread() puis avec l'aténuation  
+- variation de la tension d'alimentation => relevé de la tention de la résistence interne de la girouette avec un analogread() puis avec l'aténuation  
 
 Séance du 19/03/21
 -
--
-
+- analyse des tracés de la séance précédente  
+- calcule de la résistance de référence permettant des deltats de tension les plus élevés 
+- power point de présentation complété  
+- prise en compte de la variation de ta tension d'alimentation dans le code de la girouette  
 
