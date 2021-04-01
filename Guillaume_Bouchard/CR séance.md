@@ -58,22 +58,6 @@ Séance du 08/10 :
 -Modification du schéma initial sur Eagle    
 -rajout des capteurs sur Eagle    
 
-
-08/01/2021 :
--Création d'un code de gestion du deepsleep avec une autre méthode car la méthode utilisé est obsolète
--Création d'ordinogramme pour tout les codes de tests pour les intégrer dans le diaporama de présentation de mi parcours du projet
--Création et modification du diaporama de présentation de mi parcours du projet
-
-29/01/2021 :
--Finition du code de test de la gestion du deepsleep avec une méthode non obsolete (variable time_t, timediff etc...)
--Début des tests du module LoRa, le câblage à été revu et le code également, en fin de séance le module était initialisé (envoi testé pas reception)
--Configuration du code de récéption de LoRa pour le module TTGO (LoRa externe pour test)
+30/01/2021:  
 -Modification du schéma initial sur Eagle (rajout des capteurs, et du module LORA)  
 -Modification du schéma de clablâge du module Lora en accords avec le PCB
-
-12/02/2021 :
--Debuggage du câblage du module LoRa -> breadBoard mère non fonctionnelle
--Câblage d'un module RFM95 sur une nouvelle breadBoard puis tests d'échanges entre le RFM95 et le module TTGO -> tests fonctionnels
--Réécriture du code d'envoi/reception de message avec module LoRa
-
-19/02/2021 :
