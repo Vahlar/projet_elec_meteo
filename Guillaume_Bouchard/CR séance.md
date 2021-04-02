@@ -66,23 +66,23 @@ Séance du 08/10 :
 -Debuggage du câblage du module LoRa -> breadBoard mère non fonctionnelle  
 -Câblage d'un module RFM95 sur une nouvelle breadBoard puis tests d'échanges entre le RFM95 et le module TTGO -> tests fonctionnels  
 
-19/02/2021 :
--Modification et finalisation du schéma Eagle
--rajout des capacités pour le filtrage du bruit sur les capteurs
+19/02/2021 :  
+-Modification et finalisation du schéma Eagle  
+-rajout des capacités pour le filtrage du bruit sur les capteurs  
 
-05/03/2021 :
--Realisation du câblage pour effectuer des tests grandeurs nature
--Prise en main du logiciel Eagle pour le design de PCB
+05/03/2021 :  
+-Realisation du câblage pour effectuer des tests grandeurs nature  
+-Prise en main du logiciel Eagle pour le design de PCB  
 
-12/03/2021 :
--Avancement du PCB de la carte
+12/03/2021 :  
+-Avancement du PCB de la carte  
 
-19/03/2021 :
--Finition du PCB avec Guillaume
--Export des gerbers et de la nomenclature composant
+19/03/2021 :  
+-Finition du PCB avec Guillaume  
+-Export des gerbers et de la nomenclature composant  
 
-02/04/2021 :
--Reception de la carte
--Test de continuité 
--Suppression du plan de masse sous tous les composants CMS à l'aide du fer à souder
+02/04/2021 :  
+-Reception de la carte  
+-Test de continuité  
+-Suppression du plan de masse sous tous les composants CMS à l'aide du fer à souder  
 
