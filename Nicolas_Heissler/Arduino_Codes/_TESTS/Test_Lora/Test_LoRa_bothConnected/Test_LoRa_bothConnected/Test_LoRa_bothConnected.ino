@@ -15,7 +15,7 @@ LoRaClass LoRa1;
 #define sender_ss     5
 #define sender_cs     5
 
-// Lora Receiver
+// Lora Sender2
 #define sender2_rst  14
 #define sender2_dio0 27
 #define sender2_ss   4
@@ -40,55 +40,72 @@ void setup()
   pinMode (measure,     OUTPUT);
 
   SPI.begin();
+  
+  digitalWrite(sender_cs, HIGH);
+  digitalWrite(sender2_cs, HIGH);
 
   //Initiate sender LoRa device
   Serial.println("LoRa sender");
   digitalWrite(measure, HIGH);
+  digitalWrite(sender_cs, LOW);
+  digitalWrite(sender2_cs, HIGH);
+  delay(1000);
   LoRa0.setPins(sender_ss, sender_rst, sender_dio0);
+  LoRa0.setSPIFrequency(8E6);
   while (!LoRa0.begin(LoraSenderBand)) 
   {
     Serial.println("Starting sender LoRa failed !");
-    delay(500);
+    delay(1000);
   }
   Serial.println("Starting sender LoRa successfully !");
-//  digitalWrite(measure, LOW);
+  digitalWrite(sender_cs, HIGH);
   delay(1000);
-
-/*
-  //Initiate receiver LoRa device
+  
+  //Initiate sender 2 LoRa device
   Serial.println("LoRa1 sender");
+  digitalWrite(sender2_cs, LOW);
   LoRa1.setPins(sender2_ss, sender2_rst, sender2_dio0);  
+  LoRa1.setSPIFrequency(8E6);
   while (!LoRa1.begin(LoraSenderBand)) 
   {
     Serial.println("Starting sender 2 LoRa failed !");
     delay(500);
   }
   Serial.println("Starting sender 2 LoRa successfully !");
-  */
+  digitalWrite(sender2_cs, HIGH);
+  delay(1000);
 }
 
 void loop()
-{  
-  Serial.print("Sending packet: ");
+{
+  //Sender 1 packet code
+  Serial.print("Sending packet from sender 1 : ");
   Serial.println(messageNumber);
-
-  //Send packet code
-//  digitalWrite(measure, HIGH);
+  
+  //digitalWrite(sender_cs, LOW);
+  LoRa0.begin(LoraSenderBand);
+  delay(500);
   LoRa0.beginPacket();
-  Serial.println("test 1");
   LoRa0.print("Message from first sender number : ");
   LoRa0.print(messageNumber);
-  Serial.println("test 2");
-  LoRa0.endPacket();
-  Serial.println("test 3");
-//  digitalWrite(measure, LOW);
-
+  LoRa0.endPacket(true);
+  //digitalWrite(sender_cs, HIGH);
+  delay(1000);
+  
   //Sender 2 packet code
-//  LoRa1.beginPacket();
-//  LoRa1.print("Message from sender 2 number : ");
-//  LoRa1.print(messageNumber);
-//  LoRa1.endPacket();
- 
+  Serial.print("Sending packet from sender 2 : ");
+  Serial.println(messageNumber);
+  
+  //digitalWrite(sender2_cs, LOW);
+  LoRa1.begin(LoraSenderBand);
+  delay(500);
+  LoRa1.beginPacket();
+  digitalWrite(sender_cs, HIGH);
+  digitalWrite(sender2_cs, LOW);
+  LoRa1.print("Message from sender 2 number : ");
+  LoRa1.print(messageNumber);
+  LoRa1.endPacket(true);
+  //digitalWrite(sender2_cs, HIGH);
  
   messageNumber++;
   delay(3000);

@@ -96,4 +96,24 @@ Nicolas Heissler
 
 05/03/2021 :
 -
+-Réalisation d'un programme pour envoyer depuis deux modules LoRa différent avec un ESP32 et réception des deux sur le TTGO  
+-Début d'écriture d'un programme de réception sur un module LoRa en utilisant une interruption pour pouvoir réveiller l'ESP32 en mode deepSleep (en cours)  
+
+12/03/2021 :
+-
+-Avancement du PCB de la carte avec Guillaume  
+-Avancement sur le programme de réception sur module LoRa (avec interruption du mode deepSleep)  
+
+19/03/2021 :
+-
+-Finition du PCB avec Guillaume  
+-Travail de recherche en parrallèle pour trouver un moyen de récuperer une interruption sur un module LoRa lors de la réception d'un message  
+-Modification du code de reception LoRa avec interruption  
+-Création et modification du fichier de support de présentation  
+
+02/04/2021 :
+-
+-Création du code complet -> rassemblement de toutes les parties fonctionnelle et mise au propre du code pour compréhension facile des futurs étudiants  
+-Avancement du support de présentation pour l'oral final  
+-Avancement du rapport du projet final  
 

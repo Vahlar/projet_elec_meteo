@@ -7,12 +7,12 @@
 
 // Lora Receiver
 #define receiver_rst  14
-#define receiver_dio0 26
-#define receiver_ss   5 // 5 ESP, 18 TTGO
+#define receiver_dio0 27
+#define receiver_ss   4 // 5 ESP, 18 TTGO
 #define SCK           18  // 18 ESP, 5 TTGO
 #define MISO          19
-#define MOSI          23  // 23 ESP, 27 TTGO
-#define CS            5   // 5 ESP,  18 TTGO
+#define MOSI          27  // 23 ESP, 27 TTGO
+#define CS            4   // 5 ESP,  18 TTGO
 
 ///--- VARIABLES
 int messageNumber = 0;
@@ -24,7 +24,7 @@ void setup()
 
   Serial.println("LoRa Receiver");
 
-  SPI.begin(SCK,MISO,MOSI,CS);
+  SPI.begin();
 
   LoRa.setPins(receiver_ss, receiver_rst, receiver_dio0);
   

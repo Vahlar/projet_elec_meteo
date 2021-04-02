@@ -15,8 +15,8 @@
 // connect GROUND to GND
 
 //--  TSL2591 wiring
-// connect SCL to I2C Clock (PIN 14 on ESP32)
-// connect SDA to I2C Data  (PIN 13 on ESP32)
+// connect SCL to I2C Clock (PIN 27 on ESP32)
+// connect SDA to I2C Data  (PIN 28 on ESP32)
 // connect Vin to 3.3V
 // connect GROUND to GND
 

@@ -3,7 +3,7 @@
 #include <driver/adc.h>
 
 ///--- Définitions des PINS
-#define PinP 34
+#define PinP 32 //GPIO 32
 #define UP   1
 #define DOWN 0
 
