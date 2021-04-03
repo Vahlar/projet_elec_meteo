@@ -125,7 +125,7 @@ Séance du 19/03/21
 
 Séance de 01/04/21
 -
-- poursuite du code de la girouette (récupération de la tension d'alimentation et calcul du )  
+- poursuite du code de la girouette (récupération de la tension d'alimentation et prise en compte de sa variation)  
 - tests post création de carte  
 - Tests de continuité  
 - Suppression de plans de masse sous les composants CMS  
