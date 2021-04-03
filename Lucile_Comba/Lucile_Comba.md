@@ -123,3 +123,11 @@ Séance du 19/03/21
 - power point de présentation complété  
 - prise en compte de la variation de ta tension d'alimentation dans le code de la girouette  
 
+Séance de 01/04/21
+-
+- poursuite du code de la girouette (récupération de la tension d'alimentation et calcul du )  
+- tests post création de carte  
+- Tests de continuité  
+- Suppression de plans de masse sous les composants CMS  
+
+
