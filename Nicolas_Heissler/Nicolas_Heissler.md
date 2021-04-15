@@ -115,5 +115,11 @@ Nicolas Heissler
 -
 -Création du code complet -> rassemblement de toutes les parties fonctionnelle et mise au propre du code pour compréhension facile des futurs étudiants  
 -Avancement du support de présentation pour l'oral final  
--Avancement du rapport du projet final  
+-Avancement du rapport final du projet    
+
+15/04/2021 :
+-
+-Modification du code complet (intégration de tous les capteurs + double module LoRa + deepSleep mode)  
+-Avancement du support de présentation pour l'oral final  
+-Avancement du rapport final du projet  
 
