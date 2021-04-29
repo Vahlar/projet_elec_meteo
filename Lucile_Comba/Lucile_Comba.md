@@ -119,7 +119,7 @@ Séance du 12/03/21
 Séance du 19/03/21
 -
 - analyse des tracés de la séance précédente  
-- calcul de la résistance de référence permettant des deltats de tension les plus élevés  
+- calculeeeeeeeeeeeeeeeeeeeeeee de la résistance de référence permettant des deltats de tension les plus élevés  
 - power point de présentation complété  
 - prise en compte de la variation de ta tension d'alimentation dans le code de la girouette  
 
