@@ -98,7 +98,10 @@ Séance du 12/03/2021
 - Tension d'alimentation différente -->  nouveau tableau de correspondance des tensions en fonction de l'évolution de la résistance interne, donc de le direction du vent
 
 Séance du 19/03/2021
--
+- Analyse des tracés des courbes de tension effectués lors de la séance précédente  
+- Calcul d'une résistance de référence qui nous permettent d'avoir des deltas de tension les plus grand lors de la mesure des plus petites valeurs  
+- Analyse et prise en compte de la tension d'alimentation qui peut varier en fonction de la batterie
+- Travail sur le rapport et la présentation finale
 
 Séance du 01/04/2021
 -
@@ -109,3 +112,4 @@ Séance du 01/04/2021
 Séance du 15/04/2021
 -
 - Code girouette  
+- Travail sur le rapport et la présentation finale
