@@ -119,7 +119,7 @@ Séance du 12/03/21
 Séance du 19/03/21
 -
 - analyse des tracés de la séance précédente  
-- calculeeeeeeeeeeeeeeeeeeeeeee de la résistance de référence permettant des deltats de tension les plus élevés  
+- calcul de la résistance de référence permettant des deltats de tension les plus élevés  
 - power point de présentation complété  
 - prise en compte de la variation de ta tension d'alimentation dans le code de la girouette  
 
@@ -130,9 +130,9 @@ Séance de 01/04/21
 - Tests de continuité  
 - Suppression de plans de masse sous les composants CMS  
 
-Séance de 01/04/21
+Séance de 15/04/21
 -
-- rédaction du rapport    
+- rédaction du rapport  
 - réalisation du Powerpoint de présentation  
 
 
