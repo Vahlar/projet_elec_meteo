@@ -105,3 +105,7 @@ Séance du 01/04/2021
 - Tests post création de carte  
 - Tests de continuité  
 - Suppression de plans de masse sous les composants CMS  
+
+Séance du 15/04/2021
+-
+- Code girouette  
